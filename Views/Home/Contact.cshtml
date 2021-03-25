@@ -1,0 +1,46 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/Contact.css" type="text/css" />
+</head>
+<body>
+    <h1 id="second"> Страница с данными о фирме </h1>
+    <div class=" menu">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+            <li><a asp-controller="Home" asp-action="Checking">Проверка заказа</a></li>
+            <li>
+                <a class="menuUslug" asp-controller="Home" asp-action="Information">Услуги</a>
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Ремонт компьютера 1</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Диагностика на неисправности</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Замена комплектующих</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Диагностика Пк на вирусы</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Переустановка операционной системы</a></li>
+                </ul>
+            </li>
+            <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+        </ul>
+    </div>
+    <img id="first" src="~/images/1.jpg" alt=" Здесь должна быть картинка " />
+    <div class="Info">
+        <p>
+            Здесь находятся данные, которые помогут Вам связаться с нашей компанией
+        </p>
+        <p> Телефон: 8-950-915-3301</p>
+        <p> Почтовый адресс:<a href="mailto:a21237@yandex.ru"> a21237@yandex.ru</a></p>
+    </div>
+    <script src="~/js/site.js"></script>
+    <footer class="foo">
+        <p >Здесь будет контактная информация </b>made by DiplomProject"  </p>
+    </footer>
+</body>
+</html>

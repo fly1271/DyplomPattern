@@ -1,0 +1,26 @@
+﻿
+#first {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 250px;
+    width: 180px;
+}
+
+.Info {
+    padding-top: 200px;
+    padding-left: 350px;
+}
+
+.Info p {
+        color: red;
+        font-family: 'Times New Roman';
+        font-weight: bold
+
+}
+
+#second {
+    color: blue;
+    text-align: center;
+    padding-left:50px;
+}

@@ -1,0 +1,32 @@
+﻿
+table.ceny {
+    border: 1px solid #ECEDEE; 
+    margin: 10px 0;
+    width: 100%; 
+}
+ 
+    table.ceny th {
+        background: #124D9C;
+        border-right: 1px solid #ECEDEE; 
+        color: #FFFFFF; 
+        font-size: 15px; 
+        padding: 5px; 
+        text-align: center;
+    }
+   
+    table.ceny tr:nth-child(odd) {
+        background: #F2F7FD; 
+    }
+ 
+    table.ceny td:nth-child(1) {
+        text-align: left;
+    }
+
+    table.ceny td {
+        border-bottom: 1px solid #ECEDEE; 
+        border-right: 1px solid #ECEDEE; 
+        font-size: 14px; 
+        padding: 4px; 
+        vertical-align: middle; 
+        text-align: center;
+    }

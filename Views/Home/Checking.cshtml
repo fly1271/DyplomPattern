@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/Home.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/menu.css" type="text/css" />
+</head>
+<body>
+    <h1 id="textstring"> Тестовая страница для проверки состояния заказа</h1>
+    <div class="menu">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">Главная</a></li>
+            <li><a asp-controller="Home" asp-action="Checking">Проверка заказа</a></li>
+            <li>
+                <a class="menu-caret" asp-controller="Home" asp-action="Information">Услуги</a>
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index">Ремонт компьютера 1</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Диагностика на неисправности</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Замена комплектующих</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Диагностика Пк на вирусы</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Переустановка операционной системы</a></li>
+                </ul>
+            </li>
+            <li><a asp-controller="Home" asp-action="Contact">Контакты</a></li>
+
+        </ul>
+    </div>
+    <div class="Check">
+        <form method="post" asp-action="checking" asp-controller="Home">
+            <p>
+                Проверка заказа, введите номер заказа:
+                <input type="text" name="num" id="textline1" />
+                <input type="submit" name="check" id="btn3" />
+            </p>
+        </form>
+    </div>
+
+    <img id="first" src="~/images/1.jpg" alt=" Здесь должна быть картинка " />
+    <div class="malavasa">
+
+        <h3 id="strinG">Быстрая заявка</h3>
+        <form method="post" asp-controller="Home" asp-action="getting">
+            <p>
+                <label for="#">Адрес</label>
+                <input type="text" name="adress" id="btn1">
+            </p>
+            <p>
+                <label for="#">Номер телефона</label>
+                <input type="text" name="phone" id="btn2">
+            </p>
+            <p class="full">
+                <label for="#">Краткое описание</label>
+                <textarea id="textArea" name="info" cols="30" rows="5"></textarea>
+            </p>
+            <input id="But" type="submit" value="Отправить заявку" />
+        </form>
+    </div>
+    <footer>
+        <p id="foo">Здесь будет контактная информация </b>made by DiplomProject"  </p>
+    </footer>
+</body>
+</html>
+
+
